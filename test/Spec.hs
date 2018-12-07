@@ -5,8 +5,7 @@ import NNTypes
 
 xs = ["a", "b", "c", "d"]
 s0 = "S0"
-
--- generalLayer :: [Int] -> Int -> ([Int], String)
+generalLayer :: String -> String -> (String, String)
 generalLayer s x = (s ++ x, "x: " ++ x ++ ", s: " ++ s)
 
 printResults title (final, ys) = do
